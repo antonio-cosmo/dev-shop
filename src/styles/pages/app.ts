@@ -13,12 +13,12 @@ export const Header = styled('header', {
   width: '100%',
   maxWidth: 1180,
   margin: '0 auto',
-
   div: {
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
     gap: 10,
+    color: "$gray100",
 
     span: {
       fontSize: 24,
