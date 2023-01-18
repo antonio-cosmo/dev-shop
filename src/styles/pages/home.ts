@@ -20,7 +20,9 @@ export const Product = styled('div', {
   justifyContent: 'center',
   color: "$gray100",
   img: {
-    objectFit: 'cover'
+    objectFit: 'cover',
+    width: 'auto',
+    height: 'auto'
   },
 
   footer: {

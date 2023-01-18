@@ -6,12 +6,17 @@ import Image from 'next/image';
 
 import logoImg from '../assets/logo.svg';
 import Link from 'next/link';
+import Head from 'next/head';
 
 globalStyles();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Container>
+    <>
+      <Head>
+        <title>Dev.Shop</title>
+      </Head>
+      <Container>
       <Header>
         <Link href='/'>
           <div>
@@ -21,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Header>
       <Component {...pageProps} />
     </Container>
+    </>
 
   )
 }

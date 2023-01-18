@@ -24,7 +24,7 @@ export default function Home({products}:HomeProps) {
     }
   })
 
-  return (
+  return (  
     <HomeContainer ref={sliderRef} className="keen-slider">
       {
         products.map(product =>{
@@ -43,6 +43,7 @@ export default function Home({products}:HomeProps) {
         })
       }
     </HomeContainer>
+  
   )
 }
 
