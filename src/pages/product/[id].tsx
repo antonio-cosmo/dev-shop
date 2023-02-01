@@ -41,8 +41,7 @@ export default function Product({product}: ProductProps){
   return(
     <>
     <Head>
-    <title> {product.name} | Dev.Shop</title>
-
+      <title> Produto | Dev.Shop</title>
     </Head>
       <ProductContainer>
 
