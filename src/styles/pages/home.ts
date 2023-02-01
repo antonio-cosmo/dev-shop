@@ -21,8 +21,7 @@ export const Product = styled('div', {
   color: "$gray100",
   img: {
     objectFit: 'cover',
-    width: 'auto',
-    height: 'auto'
+   
   },
 
   footer: {

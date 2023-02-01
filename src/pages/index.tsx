@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
 import Link from "next/link";
 import Stripe from 'stripe'
 import { HomeContainer, Product } from "../styles/pages/home";
@@ -23,7 +23,9 @@ export default function Home({products}:HomeProps) {
       spacing: 48
     }
   })
-
+  const loadImage = ({src, width,quality}:ImageLoaderProps)=>{
+    return `${src}`
+  }
   return (  
     <HomeContainer ref={sliderRef} className="keen-slider">
       {
